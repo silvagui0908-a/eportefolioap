@@ -366,21 +366,25 @@ button:hover, .btn:hover {
 
 .materiais-opiniao {
     display: flex;
-    flex-wrap: wrap; /* permite quebrar em telas pequenas */
+    flex-wrap: wrap;
     gap: 32px;
     margin-top: 18px;
+    align-items: flex-start; /* impede as caixas de terem a mesma altura */
 }
 
 .materiais {
-    flex: 1 1 300px; /* ocupa o espaço disponível */
+    flex: 1 1 300px;
 }
 
 .opiniao {
-    flex: 1 1 250px; /* ocupa o espaço restante à direita */
-    background: #f0f8ff; /* cor de fundo suave para destacar */
+    flex: 1 1 250px;
+    background: #f0f8ff;
     border-left: 3px solid #3a86ff;
     padding: 18px;
     border-radius: 12px;
+
+    height: auto !important;
+    flex-grow: 0 !important; /* garante que não cresce com os materiais */
 }
 
 .opiniao h3 {
@@ -422,6 +426,7 @@ button:hover, .btn:hover {
 .bibliografia-list li a:hover {
     color: #18191b;
 }
+
 
 
 
