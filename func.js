@@ -273,9 +273,7 @@ const aulasDetalhes = {
         titulo: "Programas em consola com seleção, ciclos e números aleatórios.",
         data: "14/11/2025",
         texto: "Foram criados programas em modo consola aplicando estruturas condicionais, ciclos repetitivos e geração de números pseudoaleatórios.",
-        materiais: [
-            { imagem: "imgs/ficha6--1.png" }
-        ],
+        materiais: [],
         opiniao: "A aula consolidou eficazmente conceitos essenciais de programação estruturada."
     },
     28: {
@@ -283,7 +281,7 @@ const aulasDetalhes = {
         data: "20/11/2025",
         texto: "Os alunos programaram usando decisões, ciclos e números aleatórios, finalizando com exercícios para reforçar os conteúdos.",
         materiais: [
-            { imagem: "imgs/ficha6--2.png" }
+            { imagem: "imgs/ficha6--1.png" }
         ],
         opiniao: "A prática ajudou a esclarecer dúvidas e a reforçar capacidades."
     },
@@ -306,7 +304,7 @@ const aulasDetalhes = {
         data: "27/11/2025",
         texto: "Foram realizados programas em consola aplicando estruturas condicionais e repetitivas, juntamente com números pseudoaleatórios, terminando com exercícios práticos.",
         materiais: [
-            { imagem: "imgs/ficha6--3.png" }
+            { imagem: "imgs/ficha6--2.png" }
         ],
         opiniao: "Os alunos mostraram boa capacidade de aplicar os conceitos em exercícios reais."
     },
@@ -315,7 +313,7 @@ const aulasDetalhes = {
         data: "28/11/2025",
         texto: "A aula foi dedicada à resolução de exercícios destinados a reforçar os conteúdos previamente abordados.",
         materiais: [
-            { imagem: "imgs/ficha6--4.png" }
+            { imagem: "imgs/ficha6--3.png" }
         ],
         opiniao: "Uma sessão útil para ganhar fluidez na aplicação dos conhecimentos."
     },
@@ -323,7 +321,9 @@ const aulasDetalhes = {
         titulo: "Exercícios de consolidação de conteúdos.",
         data: "28/11/2025",
         texto: "A continuação da prática permitiu aprofundar e aplicar os conhecimentos em programação.",
-        materiais: [],
+        materiais: [
+            { imagem: "imgs/ficha6--4.png" }
+        ],
         opiniao: "A repetição orientada revelou-se eficaz para os alunos assimilarem conceitos."
     },
     34: {
@@ -414,3 +414,4 @@ function showTab(tabId, btn) {
         if(detalhe) detalhe.style.display = 'none';
     }
 }
+
