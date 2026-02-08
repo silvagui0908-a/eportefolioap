@@ -273,7 +273,9 @@ const aulasDetalhes = {
         titulo: "Programas em consola com seleção, ciclos e números aleatórios.",
         data: "14/11/2025",
         texto: "Foram criados programas em modo consola aplicando estruturas condicionais, ciclos repetitivos e geração de números pseudoaleatórios.",
-        materiais: [],
+        materiais: [
+            { imagem: "imgs/ficha6--1.png" }
+        ],
         opiniao: "A aula consolidou eficazmente conceitos essenciais de programação estruturada."
     },
     28: {
@@ -281,7 +283,7 @@ const aulasDetalhes = {
         data: "20/11/2025",
         texto: "Os alunos programaram usando decisões, ciclos e números aleatórios, finalizando com exercícios para reforçar os conteúdos.",
         materiais: [
-            { imagem: "imgs/ficha6--1.png" }
+            { imagem: "imgs/ficha6--2.png" }
         ],
         opiniao: "A prática ajudou a esclarecer dúvidas e a reforçar capacidades."
     },
@@ -304,7 +306,7 @@ const aulasDetalhes = {
         data: "27/11/2025",
         texto: "Foram realizados programas em consola aplicando estruturas condicionais e repetitivas, juntamente com números pseudoaleatórios, terminando com exercícios práticos.",
         materiais: [
-            { imagem: "imgs/ficha6--2.png" }
+            { imagem: "imgs/ficha6--3.png" }
         ],
         opiniao: "Os alunos mostraram boa capacidade de aplicar os conceitos em exercícios reais."
     },
@@ -313,7 +315,7 @@ const aulasDetalhes = {
         data: "28/11/2025",
         texto: "A aula foi dedicada à resolução de exercícios destinados a reforçar os conteúdos previamente abordados.",
         materiais: [
-            { imagem: "imgs/ficha6--3.png" }
+            { imagem: "imgs/ficha6--4.png" }
         ],
         opiniao: "Uma sessão útil para ganhar fluidez na aplicação dos conhecimentos."
     },
@@ -321,9 +323,7 @@ const aulasDetalhes = {
         titulo: "Exercícios de consolidação de conteúdos.",
         data: "28/11/2025",
         texto: "A continuação da prática permitiu aprofundar e aplicar os conhecimentos em programação.",
-        materiais: [
-            { imagem: "imgs/ficha6--4.png" }
-        ],
+        materiais: [],
         opiniao: "A repetição orientada revelou-se eficaz para os alunos assimilarem conceitos."
     },
     34: {
@@ -346,6 +346,137 @@ const aulasDetalhes = {
         texto: "Foram resolvidos exercícios adicionais para solidificar definitivamente os conteúdos trabalhados ao longo das últimas aulas.",
         materiais: [],
         opiniao: "Excelente finalização do ciclo de conteúdos; alunos mostraram progresso evidente."
+    },
+        37: {
+        titulo: "Aula 37: Greve Geral",
+        data: "11/12/2025",
+        texto: "Não se realizaram atividades letivas devido à Greve Geral.",
+        materiais: [
+            { imagem: "imgs/ficha7--1.png" }
+        ],
+        opiniao: "Apesar de não ter havido aula, foi importante registar o motivo da interrupção."
+    },
+    38: {
+        titulo: "Aula 38: Prova de Avaliação",
+        data: "12/12/2025",
+        texto: "Realização da prova de avaliação sobre os conteúdos lecionados ao longo do período.",
+        materiais: [
+            { imagem: "imgs/ficha7--2.png" }
+        ],
+        opiniao: "A prova permitiu avaliar os conhecimentos adquiridos e identificar pontos a melhorar."
+    },
+    39: {
+        titulo: "Aula 39: Auto e Heteroavaliação e Hour of Code",
+        data: "12/12/2025",
+        texto: "Realização de auto e heteroavaliação e participação na atividade Hour of Code.",
+        materiais: [
+            { imagem: "imgs/ficha7--3.png" }
+        ],
+        opiniao: "Uma aula diferente que incentivou a reflexão e o gosto pela programação."
+    },
+    40: {
+        titulo: "Aula 40: Revisões de Conteúdos",
+        data: "08/01/2026",
+        texto: "Revisão de conteúdos através da resolução de problemas simples, incluindo operações com strings e caracteres.",
+        materiais: [
+            { imagem: "imgs/ficha7--4.png" }
+        ],
+        opiniao: "A revisão ajudou a relembrar conceitos importantes após a interrupção letiva."
+    },
+    41: {
+        titulo: "Aula 41: Sessão de Sensibilização",
+        data: "09/01/2026",
+        texto: "Participação na sessão de sensibilização 'A Tua Escolha Faz a Diferença', dinamizada pela equipa do SPO.",
+        materiais: [
+            { imagem: "imgs/ficha7--5.png" }
+        ],
+        opiniao: "Uma sessão interessante e educativa, focada em escolhas conscientes e responsáveis."
+    },
+    42: {
+        titulo: "Aula 42: Exercícios de Consolidação",
+        data: "09/01/2026",
+        texto: "Resolução de exercícios práticos para rever, aplicar e consolidar os conteúdos de programação.",
+        materiais: [],
+        opiniao: "Os exercícios ajudaram a ganhar mais confiança na resolução de problemas."
+    },
+    43: {
+        titulo: "Aula 43: Exercícios Práticos",
+        data: "15/01/2026",
+        texto: "Resolução de exercícios práticos com o objetivo de consolidar os conteúdos trabalhados.",
+        materiais: [],
+        opiniao: "A prática contínua contribuiu para uma melhor compreensão da programação."
+    },
+    44: {
+        titulo: "Aula 44: Exercícios Práticos",
+        data: "16/01/2026",
+        texto: "Aplicação dos conteúdos através da resolução de exercícios práticos orientados.",
+        materiais: [],
+        opiniao: "Uma aula produtiva que reforçou os conhecimentos adquiridos."
+    },
+    45: {
+        titulo: "Aula 45: Exercícios Práticos",
+        data: "16/01/2026",
+        texto: "Continuação da resolução de exercícios para consolidação dos conteúdos.",
+        materiais: [],
+        opiniao: "A repetição ajudou a esclarecer dúvidas e a melhorar o desempenho."
+    },
+    46: {
+        titulo: "Aula 46: Consolidação de Conteúdos",
+        data: "22/01/2026",
+        texto: "Resolução de exercícios práticos como forma de rever, aplicar e consolidar os conteúdos.",
+        materiais: [],
+        opiniao: "Uma boa aula para consolidar conhecimentos antes de avançar."
+    },
+    47: {
+        titulo: "Aula 47: Funções e Subprogramas",
+        data: "23/01/2026",
+        texto: "Utilização de funções, subprogramas e diferentes formas de passagem de parâmetros, aplicadas na resolução de problemas.",
+        materiais: [],
+        opiniao: "A introdução às funções tornou os programas mais organizados e eficientes."
+    },
+    48: {
+        titulo: "Aula 48: Exercícios com Funções",
+        data: "23/01/2026",
+        texto: "Resolução de exercícios práticos utilizando funções para reforçar os conteúdos abordados.",
+        materiais: [
+            { imagem: "imgs/miniproject2.png" }
+        ],
+        opiniao: "Os exercícios ajudaram a compreender melhor o funcionamento das funções."
+    },
+    49: {
+        titulo: "Aula 49: Exercícios de Revisão",
+        data: "30/01/2026",
+        texto: "Resolução de exercícios como forma de rever e consolidar os conteúdos lecionados.",
+        materiais: [],
+        opiniao: "Uma aula útil para reforçar conhecimentos já adquiridos."
+    },
+    50: {
+        titulo: "Aula 50: Exercícios de Revisão",
+        data: "30/01/2026",
+        texto: "Continuação da resolução de exercícios de revisão e consolidação.",
+        materiais: [],
+        opiniao: "A prática constante contribuiu para maior segurança na programação."
+    },
+    51: {
+        titulo: "Aula 51: Funções e Estruturas de Controlo",
+        data: "05/02/2026",
+        texto: "Desenvolvimento de programas com funções, estruturas de seleção e repetição para resolver problemas simples.",
+        materiais: [],
+        opiniao: "Uma aula importante para integrar vários conceitos de programação."
+    },
+    52: {
+        titulo: "Aula 52: Arrays, Listas e Tuplos",
+        data: "06/02/2026",
+        texto: "Execução de operações básicas com arrays e utilização de listas e tuplos em Python.",
+        materiais: [],
+        opiniao: "A introdução às estruturas de dados facilitou a organização da informação."
+    },
+    53: {
+        titulo: "Aula 53: Exercícios de Consolidação Final",
+        data: "06/02/2026",
+        texto: "Resolução de exercícios práticos para consolidar os conteúdos trabalhados, recorrendo à programação em consola.",
+        materiais: [],
+        opiniao: "Uma boa forma de consolidar todos os conhecimentos adquiridos ao longo das aulas."
     }
 }
 
@@ -414,4 +545,3 @@ function showTab(tabId, btn) {
         if(detalhe) detalhe.style.display = 'none';
     }
 }
-
