@@ -477,6 +477,149 @@ const aulasDetalhes = {
         texto: "Resolução de exercícios práticos para consolidar os conteúdos trabalhados, recorrendo à programação em consola.",
         materiais: [],
         opiniao: "Uma boa forma de consolidar todos os conhecimentos adquiridos ao longo das aulas."
+    },
+    54: {
+        titulo: "Aula 54: Exercícios de Consolidação",
+        data: "12/02/2026",
+        texto: "Resolução de exercícios como forma de rever, aplicar e consolidar os conteúdos.",
+        materiais: [],
+        opiniao: "Exercícios práticos que ajudaram a fixar os conceitos aprendidos."
+    },
+
+    55: {
+        titulo: "Aula 55: Escola Encerrada",
+        data: "13/02/2026",
+        texto: "Escola encerrada por indicação da Proteção Civil devido ao agravamento das condições meteorológicas.",
+        materiais: [],
+        opiniao: "A interrupção das aulas foi necessária para garantir a segurança de todos."
+    },
+
+    56: {
+        titulo: "Aula 56: Escola Encerrada",
+        data: "13/02/2026",
+        texto: "Escola encerrada por indicação da Proteção Civil devido ao agravamento das condições meteorológicas.",
+        materiais: [],
+        opiniao: "Mais uma aula cancelada por motivos de segurança, sem impacto direto na aprendizagem."
+    },
+
+    57: {
+        titulo: "Aula 57: Exercícios Práticos",
+        data: "19/02/2026",
+        texto: "Resolução de exercícios práticos como forma de rever, aplicar e consolidar os conteúdos.",
+        materiais: [],
+        opiniao: "Exercícios práticos que ajudaram a fixar os conceitos aprendidos."
+    },
+
+    58: {
+        titulo: "Aula 58: Exercícios Práticos",
+        data: "20/02/2026",
+        texto: "Resolução de exercícios práticos como forma de rever, aplicar e consolidar os conteúdos.",
+        materiais: [],
+        opiniao: "Exercícios práticos que ajudaram a fixar os conceitos aprendidos."
+    },
+
+    59: {
+        titulo: "Aula 59: Exercícios Práticos",
+        data: "20/02/2026",
+        texto: "Resolução de exercícios práticos como forma de rever, aplicar e consolidar os conteúdos.",
+        materiais: [],
+        opiniao: "Exercícios práticos que ajudaram a fixar os conceitos aprendidos."
+    },
+
+    60: {
+        titulo: "Aula 60: Visita de Estudo – Memorial do Convento",
+        data: "26/02/2026",
+        texto: "Participação numa atividade cultural no Auditório de Música de Coimbra, assistindo a uma peça baseada na obra Memorial do Convento.",
+        materiais: [],
+        opiniao: "Uma experiência interessante que permitiu relacionar a tecnologia com a cultura."
+    },
+
+    61: {
+        titulo: "Aula 61: Introdução ao LEGO SPIKE Prime",
+        data: "27/02/2026",
+        texto: "Introdução à programação em ambiente visual e apresentação do projeto com LEGO SPIKE Prime.",
+        materiais: [],
+        opiniao: "Uma aula interessante que introduziu a robótica de forma prática."
+    },
+
+    62: {
+        titulo: "Aula 62: Programação com LEGO SPIKE",
+        data: "27/02/2026",
+        texto: "Aplicação de conceitos de programação ao controlo de dispositivos físicos com LEGO SPIKE Prime.",
+        materiais: [],
+        opiniao: "A prática com robôs tornou a aprendizagem mais dinâmica."
+    },
+
+    63: {
+        titulo: "Aula 63: Introdução à Multimédia",
+        data: "05/03/2026",
+        texto: "Introdução ao conceito de multimédia e distinção entre imagem bitmap e vetorial.",
+        materiais: [],
+        opiniao: "Uma boa introdução a novos conteúdos importantes na área digital."
+    },
+
+    64: {
+        titulo: "Aula 64: Projeto LEGO SPIKE",
+        data: "06/03/2026",
+        texto: "Desenvolvimento do projeto com LEGO SPIKE Prime utilizando ciclos e eventos.",
+        materiais: [],
+        opiniao: "A aula permitiu desenvolver o raciocínio lógico através da prática."
+    },
+
+    65: {
+        titulo: "Aula 65: Projeto LEGO SPIKE",
+        data: "06/03/2026",
+        texto: "Continuação do desenvolvimento do projeto com LEGO SPIKE Prime.",
+        materiais: [],
+        opiniao: "A continuidade do projeto ajudou a consolidar os conhecimentos."
+    },
+
+    66: {
+        titulo: "Aula 66: Projeto LEGO SPIKE",
+        data: "12/03/2026",
+        texto: "Continuação do desenvolvimento do projeto com LEGO SPIKE Prime.",
+        materiais: [],
+        opiniao: "A prática contínua contribuiu para melhorar as competências."
+    },
+
+    67: {
+        titulo: "Aula 67: Projeto LEGO SPIKE",
+        data: "13/03/2026",
+        texto: "Desenvolvimento do projeto com LEGO SPIKE Prime. Falta devido à participação na Futurália.",
+        materiais: [],
+        opiniao: "Apesar da ausência, o conteúdo foi importante para o desenvolvimento do projeto."
+    },
+
+    68: {
+        titulo: "Aula 68: Projeto LEGO SPIKE",
+        data: "13/03/2026",
+        texto: "Desenvolvimento do projeto com LEGO SPIKE Prime. Falta devido à participação na Futurália.",
+        materiais: [],
+        opiniao: "Uma aula importante para o projeto, apesar da ausência."
+    },
+
+    69: {
+        titulo: "Aula 69: Conclusão do Projeto e Multimédia",
+        data: "19/03/2026",
+        texto: "Conclusão do projeto com LEGO SPIKE Prime e introdução aos conceitos de multimédia.",
+        materiais: [],
+        opiniao: "Uma aula importante que marcou o fim de um projeto e início de novos conteúdos."
+    },
+
+    70: {
+        titulo: "Aula 70: Projeto e Multimédia",
+        data: "20/03/2026",
+        texto: "Continuação da integração dos conteúdos de programação e multimédia.",
+        materiais: [],
+        opiniao: "A aula ajudou a consolidar a ligação entre diferentes áreas."
+    },
+
+    71: {
+        titulo: "Aula 71: Projeto e Multimédia",
+        data: "20/03/2026",
+        texto: "Continuação da integração dos conteúdos de programação e multimédia.",
+        materiais: [],
+        opiniao: "A continuidade do trabalho permitiu reforçar os conhecimentos adquiridos."
     }
 }
 
