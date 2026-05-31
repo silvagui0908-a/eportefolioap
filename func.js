@@ -1,60 +1,50 @@
 /**
  * func.js
- * Funções utilitárias para adicionar funcionalidades ao seu portfólio.
+ * Funções utilitárias otimizadas para o ePortfólio responsivo.
  */
 
-// Exemplo: Alternar tema claro/escuro
-function toggleTheme() {
-    document.body.classList.toggle('dark-theme');
-}
-
-// Exemplo: Rolagem suave para seções
-function scrollToSection(id) {
-    const section = document.getElementById(id);
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-    }
-}
-
-// Exemplo: Mostrar mensagem de boas-vindas
-function showWelcomeMessage() {
-    alert('Bem-vindo ao meu portfólio!');
-}
-
-// Exemplo: Copiar texto para área de transferência
-function copyToClipboard(text) {
-    navigator.clipboard.writeText(text)
-        .then(() => alert('Texto copiado!'))
-        .catch(() => alert('Falha ao copiar texto.'));
-}
-
-// Função para mostrar/ocultar abas
+// Função para mostrar/ocultar as abas principais
 function showTab(tabId, btn) {
-    const tabs = ['inicio', 'sobre-mim', 'sumarios'];
+    const tabs = ['inicio', 'sobre-mim', 'sumarios', 'bibliografia']; 
+    
     tabs.forEach(id => {
         const section = document.getElementById(id);
         if (section) {
             section.style.display = (id === tabId) ? 'block' : 'none';
         }
     });
-    // Destacar aba ativa
+
+    // Destacar o botão da aba ativa
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
     if (btn) btn.classList.add('active');
-    // Esconder detalhe da aula se mudar de aba
-    if(tabId !== 'sumarios') {
-        const detalhe = document.getElementById('aula-detalhe');
-        if(detalhe) detalhe.style.display = 'none';
+    
+    // Esconder o detalhe da aula caso mude de aba
+    const detalhe = document.getElementById('aula-detalhe');
+    if (detalhe && tabId !== 'sumarios') {
+        detalhe.style.display = 'none';
     }
 }
 
-// Dados das aulas
+// Voltar para a listagem de sumários
+function voltarSumarios() {
+    document.getElementById('aula-detalhe').style.display = 'none';
+    document.getElementById('sumarios').style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Ativar a aba inicial ao carregar o documento
+window.onload = function() {
+    const firstBtn = document.querySelector('.tab-btn');
+    showTab('inicio', firstBtn);
+};
+
+// Objeto de dados das aulas (Mantém todas as tuas aulas aqui dentro)
 const aulasDetalhes = {
     1: {
         titulo: "Aula 1: Apresentação",
         data: "10/09/2025",
-        texto: "Apresentação do professor e dos alunos. Enquadramento da disciplina Aplicações Informáticas B: objetivos, conteúdos programáticos e metodologia de trabalho. Apresentação das normas e regras de funcionamento da disciplina. Esclarecimento sobre critérios de avaliação.",
-        materiais: [
-        ],
+        texto: "Apresentação do professor e dos alunos. Enquadramento da disciplina Aplicações Informáticas B: objetivos, conteúdos programáticos e metodologia de trabalho.",
+        materiais: [],
         opiniao: "Uma boa introdução à disciplina, com esclarecimentos importantes sobre o funcionamento e expectativas."
     },
     2: {
@@ -554,7 +544,7 @@ const aulasDetalhes = {
         titulo: "Aula 63: Introdução à Multimédia",
         data: "05/03/2026",
         texto: "Introdução ao conceito de multimédia e distinção entre imagem bitmap e vetorial.",
-        materiais: [],
+        materiais: [{ imagem: "imgs/introducaoamultimedia.png" }],
         opiniao: "Uma boa introdução a novos conteúdos importantes na área digital."
     },
 
@@ -613,39 +603,195 @@ const aulasDetalhes = {
         materiais: [],
         opiniao: "A aula ajudou a consolidar a ligação entre diferentes áreas."
     },
-
     71: {
         titulo: "Aula 71: Projeto e Multimédia",
         data: "20/03/2026",
         texto: "Continuação da integração dos conteúdos de programação e multimédia.",
         materiais: [],
         opiniao: "A continuidade do trabalho permitiu reforçar os conhecimentos adquiridos."
+    },
+    72: {
+        titulo: "Aula 72: Apresentação e Defesa do Projeto LEGO SPIKE",
+        data: "26/03/2026",
+        texto: "Apresentação e defesa do projeto desenvolvido com o ecossistema LEGO SPIKE Prime, integrando diversos produtos multimédia criados ao longo do período.",
+        materiais: [],
+        opiniao: "Foi muito gratificante apresentar o resultado do nosso esforço com o LEGO SPIKE e ver a aplicação prática dos conceitos multimédia que estudámos."
+    },
+    73: {
+        titulo: "Aula 73: Defesa do Projeto, Autoavaliação e Atividades",
+        data: "27/03/2026",
+        texto: "Conclusão da apresentação e defesa do projeto LEGO SPIKE Prime com integração multimédia. Realização do processo de autoavaliação e participação nas atividades de final de período.",
+        materiais: [],
+        opiniao: "O momento da autoavaliação permitiu-me refletir criticamente sobre o meu progresso e dedicação neste projeto letivo."
+    },
+    74: {
+        titulo: "Aula 74: Atividades de Final de Período",
+        data: "27/03/2026",
+        texto: "Participação ativa nas atividades letivas e de integração programadas para o encerramento do período escolar.",
+        materiais: [],
+        opiniao: "Uma excelente oportunidade para descontrair com a turma e encerrar as metas estipuladas para este período com balanço positivo."
+    },
+    75: {
+        titulo: "Aula 75: Fundamentos de Multimédia Digital e Imagem",
+        data: "16/04/2026",
+        texto: "Introdução às tecnologias multimédia atuais e fundamentos da interatividade. Estudo do conceito de multimédia digital, importância da tipografia (caracteres/fontes), distinção entre imagem bitmap e vetorial, e introdução à edição de imagem.",
+        materiais: [],
+        opiniao: "A distinção entre imagens bitmap e vetoriais foi fundamental para perceber como a resolução afeta a qualidade visual dos projetos."
+    },
+    76: {
+        titulo: "Aula 76: Escola Encerrada – Greve",
+        data: "17/04/2026",
+        texto: "Não se realizaram atividades letivas devido ao encerramento do estabelecimento de ensino motivado por greve.",
+        materiais: [],
+        opiniao: "Aula sem efeito devido à paralisação por greve."
+    },
+    77: {
+        titulo: "Aula 77: Escola Encerrada – Greve",
+        data: "17/04/2026",
+        texto: "Sessão letiva cancelada pelo encerramento da escola devido à ocorrência de greve.",
+        materiais: [],
+        opiniao: "Inviabilidade de progressão na matéria devido ao fecho da escola."
+    },
+    78: {
+        titulo: "Aula 78: Manipulação e Edição de Imagem",
+        data: "23/04/2026",
+        texto: "Exploração de software de edição de imagem. Realização de operações práticas de manipulação, edição e integração de imagens em produtos multimédia para consolidação de conteúdos.",
+        materiais: [{ imagem: "imgs/photoshop--1.png" }],
+        opiniao: "Praticar diretamente no software ajudou-me a dominar melhor as ferramentas básicas de recorte e ajuste de imagem."
+    },
+    79: {
+        titulo: "Aula 79: Exercícios Práticos de Edição de Imagem",
+        data: "24/04/2026",
+        texto: "Continuação do trabalho prático com software de edição de imagem. Resolução de desafios de manipulação e integração visual para rever e fixar as competências adquiridas.",
+        materiais: [{ imagem: "imgs/photoshop--2.png" }],
+        opiniao: "Os exercícios práticos propostos foram ótimos para ganhar maior agilidade e precisão nas ferramentas de edição."
+    },
+    80: {
+        titulo: "Aula 80: Criação de GIFs Animados",
+        data: "24/04/2026",
+        texto: "Introdução e conceitos de animação através da criação de GIFs animados. Resolução de exercícios práticos focados na sequência de imagens e consolidação de dinâmicas multimédia.",
+        materiais: [{ imagem: "imgs/luzes2.gif" }],
+        opiniao: "Criar GIFs animados foi uma das partes mais divertidas! É incrível ver como a junção de imagens estáticas ganha vida."
+    },
+    81: {
+        titulo: "Aula 81: Edição e Produção de Áudio Digital",
+        data: "30/04/2026",
+        texto: "Introdução à edição de áudio digital com a ferramenta Audacity. Aprendizagem de mistura de múltiplas faixas sonoras, aplicação de efeitos (fade, eco, equalização) e desenvolvimento de um projeto prático para exportação em formato MP3.",
+        materiais: [{ imagem: "imgs/audacity.png" }],
+        opiniao: "O Audacity revelou-se um software bastante intuitivo. Controlar o fade e misturar as faixas de som abriu muitas portas para os meus projetos."
+    },
+    82: {
+        titulo: "Aula 82: Captação e Edição de Áudio",
+        data: "07/05/2026",
+        texto: "Resolução de exercícios práticos avançados focados na captação e edição de áudio digital adaptado para diferentes suportes multimédia.",
+        materiais: [],
+        opiniao: "Ajustar o áudio com foco no suporte final foi essencial para compreender a importância da equalização correta do som."
+    },
+    83: {
+        titulo: "Aula 83: Consolidação de Áudio Digital",
+        data: "08/05/2026",
+        texto: "Continuação da atividade prática orientada de captação e edição de som, visando a aplicação rigorosa e a consolidação das técnicas de áudio em ambiente multimédia.",
+        materiais: [{ imagem: "imgs/audacity--2.png" }],
+        opiniao: "Bom ritmo de trabalho prático, ideal para tirar dúvidas sobre a sobreposição correta de canais de áudio."
+    },
+    84: {
+        titulo: "Aula 84: Formatos de Som/Vídeo e Guiões Multimédia",
+        data: "08/05/2026",
+        texto: "Exploração dos principais formatos de ficheiros de som e vídeo. Introdução às fases de autoria de vídeo (aquisição, edição e pós-produção) e iniciação ao planeamento e estruturação de guiões narrativos.",
+        materiais: [],
+        opiniao: "Aprender a planear um guião antes de avançar para o software faz toda a diferença na organização das ideias do projeto."
+    },
+    85: {
+        titulo: "Aula 85: Palestra '4Me – On the Road'",
+        data: "14/05/2026",
+        texto: "Interrupção das atividades regulares em sala para a participação e assistência da turma na Palestra comunitária e formativa '4Me – On the Road'.",
+        materiais: [],
+        opiniao: "A palestra trouxe dinâmicas e perspetivas muito interessantes que complementam a nossa formação pessoal e social."
+    },
+    86: {
+        titulo: "Aula 86: Planeamento e Design de Interfaces de Vídeo",
+        data: "15/05/2026",
+        texto: "Estudo detalhado do processo de autoria de vídeo e etapas de um projeto multimédia. Estruturação de guiões, conceção de personagens e enredos, criação de ambientes com descontinuidade espácio-temporal e elaboração de protótipos de interfaces com esquemas de navegação.",
+        materiais: [],
+        opiniao: "Esta aula foi bastante densa mas crucial para entender como se desenha a arquitetura de navegação e o aspeto visual de uma interface."
+    },
+    87: {
+        titulo: "Aula 87: Estruturação de Narrativas e Protótipos",
+        data: "15/05/2026",
+        texto: "Aprofundamento prático na conceção de cenas, enredos e ambientes de animação digital. Exercícios de definição de objetivos, calendarização, distribuição de tarefas e composição visual de interfaces.",
+        materiais: [],
+        opiniao: "Gostei muito de trabalhar na criação das personagens e de começar a organizar a calendarização do projeto para cumprir os prazos."
+    },
+    88: {
+        titulo: "Aula 88: Início do Desenvolvimento do Projeto Final",
+        data: "21/05/2026",
+        texto: "Aplicação integrada de todas as fases de autoria multimédia: guião, criação de personagens, ambientes de animação, prototipagem, montagem, testes de validação e estratégias de distribuição. Início oficial do Desenvolvimento do Projeto Final.",
+        materiais: [],
+        opiniao: "O arranque do Projeto Final deixa-nos entusiasmados por podermos aplicar tudo o que aprendemos sobre imagem, som e vídeo num produto único."
+    },
+    89: {
+        titulo: "Aula 89: Projeto Final – Desenvolvimento",
+        data: "22/05/2026",
+        texto: "Trabalho prático contínuo dedicado ao desenvolvimento e à produção de conteúdos para o Projeto Final de Aplicações Informáticas B.",
+        materiais: [],
+        opiniao: "Focámo-nos na recolha e produção dos primeiros conteúdos multimédia, organizando as pastas do projeto de forma eficiente."
+    },
+    90: {
+        titulo: "Aula 90: Projeto Final – Montagem e Edição",
+        data: "22/05/2026",
+        texto: "Sessão dedicada ao desenvolvimento do Projeto Final, focando na montagem e integração dos componentes de áudio e imagem digital planeados.",
+        materiais: [],
+        opiniao: "O desenvolvimento está a correr bem. Unir as imagens editadas com as faixas sonoras está a dar forma ao nosso guião."
+    },
+    91: {
+        titulo: "Aula 91: Projeto Final – Avanço Prático",
+        data: "28/05/2026",
+        texto: "Continuação do desenvolvimento autónomo e assistido do Projeto Final, refinando os esquemas de navegação e a composição visual do produto.",
+        materiais: [],
+        opiniao: "Aproveitámos esta sessão para corrigir pequenos erros de interface e melhorar a fluidez da nossa narrativa visual."
+    },
+    92: {
+        titulo: "Aula 92: Projeto Final – Ajustes e Animações",
+        data: "29/05/2026",
+        texto: "Fase avançada de desenvolvimento do Projeto Final. Trabalho focado na aplicação dos princípios de continuidade e refinamento dos protótipos audiovisuais.",
+        materiais: [],
+        opiniao: "Falta pouco para terminar! Esta aula foi essencial para garantir que as transições e efeitos sonoros estão perfeitamente sincronizados."
+    },
+    93: {
+        titulo: "Aula 93: Projeto Final – Testes e Validação",
+        data: "29/05/2026",
+        texto: "Fase terminal de desenvolvimento do Projeto Final. Realização de testes de validação do produto multimédia e preparação dos ficheiros finais para entrega e distribuição.",
+        materiais: [],
+        opiniao: "Terminar o projeto final e testar todas as funcionalidades dá uma enorme sensação de realização. O resultado ficou excelente!"
     }
-}
+};
 
-
-
+// Renderizar dinamicamente o detalhe de cada aula
 function showAulaDetalhe(aulaNum) {
     const detalhe = aulasDetalhes[aulaNum];
     if (!detalhe) return;
+    
     document.getElementById('sumarios').style.display = 'none';
     document.getElementById('aula-detalhe').style.display = 'block';
+    
+    // Forçar scroll para o topo ao abrir o detalhe
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
     let html = `
         <h2>${detalhe.titulo}</h2>
         <div class="sumario-header">
-            <span class="sumario-label">Sumário:</span>
+            <span><strong>Sumário:</strong> Conteúdo Letivo</span>
             <span class="sumario-data">Data: ${detalhe.data}</span>
         </div>
-        <p style="margin-top:18px;">${detalhe.texto}</p>
+        <p>${detalhe.texto}</p>
         <div class="materiais-opiniao">
             <div class="materiais">
                 <h3>Materiais da Aula:</h3>
                 <div class="materiais-imagens">
-                    ${detalhe.materiais.map(m => `
-                        ${m.imagem ? 
-                            `<img src="${m.imagem}" alt="${detalhe.titulo}" style="max-width:300px; margin:10px 0; border-radius:8px;">`
-                        : ""}
-                    `).join("")}
+                    ${detalhe.materiais && detalhe.materiais.length > 0 ? 
+                        detalhe.materiais.map(m => m.imagem ? `<img src="${m.imagem}" alt="${detalhe.titulo}">` : "").join("") 
+                        : "<p style='color:#777; font-size:0.95rem; margin-top:10px;'>Nenhum material visual anexado.</p>"
+                    }
                 </div>
             </div>
             <div class="opiniao">
@@ -655,36 +801,4 @@ function showAulaDetalhe(aulaNum) {
         </div>
     `;
     document.getElementById('aula-detalhe-conteudo').innerHTML = html;
-}
-
-
-
-
-
-function voltarSumarios() {
-    document.getElementById('aula-detalhe').style.display = 'none';
-    document.getElementById('sumarios').style.display = 'block';
-}
-
-// Mostrar a aba "inicio" ao carregar a página
-window.onload = function() {
-    showTab('inicio', document.querySelector('.tab-btn'));
-};
-
-function showTab(tabId, btn) {
-    const tabs = ['inicio', 'sobre-mim', 'sumarios', 'bibliografia']; 
-    tabs.forEach(id => {
-        const section = document.getElementById(id);
-        if (section) {
-            section.style.display = (id === tabId) ? 'block' : 'none';
-        }
-    });
-    // Destacar aba ativa
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    if (btn) btn.classList.add('active');
-    // Esconder detalhe da aula se mudar de aba
-    if(tabId !== 'sumarios') {
-        const detalhe = document.getElementById('aula-detalhe');
-        if(detalhe) detalhe.style.display = 'none';
-    }
 }
