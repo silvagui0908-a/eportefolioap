@@ -5,7 +5,7 @@
     <title>Portefólio Pessoal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="design.css">
-    <script src="func.js"></script>
+    <script src="func.js" defer></script>
 </head>
 <body>
     <nav>
@@ -16,131 +16,160 @@
             <button class="tab-btn" onclick="showTab('bibliografia', this)">Bibliografia</button>
         </div>
     </nav>
+
     <div class="container">
+        <!-- SEÇÃO: INÍCIO -->
         <div id="inicio">
             <h1>ePortefólio de Guilherme Silva</h1>
             <p>Bem-vindo ao meu portefólio! Aqui podes encontrar informações sobre mim e os sumários das aulas que tive.</p>
-            <img src="imgs/—Pngtree—abstract white technology_8796924.png" alt="wave1" width="1000px">
+            <img src="imgs/—Pngtree—abstract white technology_8796924.png" alt="Tecnologia Abstrata">
         </div>
+
+        <!-- SEÇÃO: SOBRE MIM -->
         <div id="sobre-mim" style="display:none;">
             <h2>Sobre Mim</h2>
             <p>
                 Olá! Sou estudante de Aplicações Informáticas e este é o meu portefólio onde partilho o meu percurso académico e os sumários das aulas que frequentei.
             </p>
         </div>
+
+        <!-- SEÇÃO: SUMÁRIOS -->
         <div id="sumarios" style="display:none;">
             <h2>Sumários das Aulas</h2>
             <div class="sumarios-grid">
+                
                 <div class="sumario-card" onclick="showAulaDetalhe(1)">
                     <h3>Aula 1: Apresentação</h3>
                     <p>Apresentação do professor e dos alunos.</p>
                     <span class="sumario-data">Data: 18/09/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(2)">
                     <h3>Aula 2: Introdução aos conceitos fundamentais</h3>
                     <p>Exemplificação inicial e breve exploração prática.</p>
                     <span class="sumario-data">Data: 19/09/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(3)">
                     <h3>Aula 3: Introdução ao ePortfólio</h3>
                     <p>Organização inicial do trabalho dos alunos.</p>
                     <span class="sumario-data">Data: 19/09/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(4)">
                     <h3>Aula 4: Resolução de exercícios práticos</h3>
                     <p>Consolidar os conteúdos abordados até ao momento.</p>
                     <span class="sumario-data">Data: 25/09/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(5)">
                     <h3>Aula 5: Resolução de exercícios práticos</h3>
                     <p>Consolidar os conteúdos abordados até ao momento.</p>
                     <span class="sumario-data">Data: 26/09/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(6)">
                     <h3>Aula 6: Resolução de exercícios práticos</h3>
                     <p>Consolidar os conteúdos abordados até ao momento.</p>
                     <span class="sumario-data">Data: 26/09/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(7)">
                     <h3>Aula 7: Resolução de exercícios práticos</h3>
                     <p>Consolidar os conteúdos abordados até ao momento.</p>
                     <span class="sumario-data">Data: 02/10/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(8)">
                     <h3>Aula 8: Introdução ao Python</h3>
                     <p>Introdução à linguagem de programação Python.</p>
                     <span class="sumario-data">Data: 03/10/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(9)">
                     <h3>Aula 9: Resolução de exercícios práticos</h3>
                     <p>Resolução de exercícios em Python.</p>
                     <span class="sumario-data">Data: 03/10/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(10)">
                     <h3>Aula 10: Resolução de exercícios práticos</h3>
                     <p>Resolução de exercícios em Python.</p>
                     <span class="sumario-data">Data: 09/10/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(11)">
                     <h3>Aula 11: Resolução de exercícios práticos</h3>
                     <p>Resolução de exercícios em Python.</p>
                     <span class="sumario-data">Data: 10/10/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(12)">
                     <h3>Aula 12: Resolução de exercícios práticos</h3>
                     <p>Resolução de exercícios em Python.</p>
                     <span class="sumario-data">Data: 10/10/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(13)">
                     <h3>Aula 13: Resolução de exercícios práticos</h3>
                     <p>Resolução de exercícios em Python.</p>
                     <span class="sumario-data">Data: 16/10/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(14)">
                     <h3>Aula 14: Resolução de exercícios práticos</h3>
                     <p>Resolução de exercícios em Python.</p>
                     <span class="sumario-data">Data: 17/10/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(15)">
                     <h3>Aula 15: Resolução de exercícios práticos</h3>
                     <p>Resolução de exercícios em Python.</p>
                     <span class="sumario-data">Data: 17/10/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(16)">
                     <h3>Aula 16: Elaborar programas com a biblioteca turtle</h3>
                     <p>Resolução de exercícios em Python e aprendizagem da biblioteca turtle comecando a fazer alguns exercícios.</p>
                     <span class="sumario-data">Data: 23/10/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(17)">
                     <h3>Aula 17: Resolução de exercícios práticos</h3>
                     <p>Resolução de exercícios em Python.</p>
                     <span class="sumario-data">Data: 24/10/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(18)">
                     <h3>Aula 18: Resolução de exercícios práticos</h3>
                     <p>Resolução de exercícios em Python.</p>
                     <span class="sumario-data">Data: 24/10/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(19)">
                     <h3>Aula 19: Resolução de exercícios práticos</h3>
                     <p>Resolução de exercícios em Python.</p>
                     <span class="sumario-data">Data: 30/10/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(20)">
                     <h3>Aula 20: Resolução de exercícios práticos</h3>
                     <p>Resolução de exercícios em Python.</p>
                     <span class="sumario-data">Data: 31/10/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(21)">
                     <h3>Aula 21: Resolução de exercícios práticos</h3>
                     <p>Resolução de exercícios em Python.</p>
                     <span class="sumario-data">Data: 31/10/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(22)">
                     <h3>Aula 22: Análise dos portefolios.</h3>
                     <p>Análise dos portefolios individuais e resolução de exercícios práticos.</p>
                     <span class="sumario-data">Data: 06/11/2025</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(23)"> 
                     <h3>Aula 23: Portfólios e Programação Gráfica</h3> 
                     <p>Analisámos os portfólios individuais e trabalhámos na criação de programas gráficos recorrendo à biblioteca turtle, reforçando conceitos através de exercícios práticos.</p> 
@@ -224,10 +253,11 @@
                     <p>A tarde foi focada na resolução de exercícios que ajudaram a solidificar os conceitos de programação abordados recentemente.</p> 
                     <span class="sumario-data">Data: 05/12/2025</span> 
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(37)">
-                <h3>Aula 37: Greve Geral</h3>
-                <p>Não se realizaram atividades letivas devido à Greve Geral.</p>
-                <span class="sumario-data">Data: 11/12/2025</span>
+                    <h3>Aula 37: Greve Geral</h3>
+                    <p>Não se realizaram atividades letivas devido à Greve Geral.</p>
+                    <span class="sumario-data">Data: 11/12/2025</span>
                 </div>
 
                 <div class="sumario-card" onclick="showAulaDetalhe(38)">
@@ -268,7 +298,7 @@
 
                 <div class="sumario-card" onclick="showAulaDetalhe(44)">
                     <h3>Aula 44: Exercícios Práticos</h3>
-                    <p>Continuação da resolução de exercícios para consolidação dos conteúdos.</p>
+                    <p>Continuação da resolução de exercícios para consolidation dos conteúdos.</p>
                     <span class="sumario-data">Data: 16/01/2026</span>
                 </div>
 
@@ -325,6 +355,7 @@
                     <p>Resolução de exercícios práticos para consolidar os conteúdos lecionados.</p>
                     <span class="sumario-data">Data: 06/02/2026</span>
                 </div>
+
                 <div class="sumario-card" onclick="showAulaDetalhe(54)">
                     <h3>Aula 54: Exercícios de Consolidação</h3>
                     <p>Resolução de exercícios para rever e consolidar conteúdos.</p>
@@ -432,9 +463,142 @@
                     <p>Continuação da integração de conteúdos.</p>
                     <span class="sumario-data">Data: 20/03/2026</span>
                 </div>
+                <div class="sumario-card" onclick="showAulaDetalhe(72)">
+                    <h3>Aula 72: Defesa do Projeto LEGO SPIKE</h3>
+                    <p>Apresentação e defesa do projeto com LEGO SPIKE Prime integrando produtos multimédia.</p>
+                    <span class="sumario-data">Data: 26/03/2026</span>
                 </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(73)">
+                    <h3>Aula 73: Defesa do Projeto e Auto-avaliação</h3>
+                    <p>Apresentação do projeto com LEGO SPIKE Prime, auto-avaliação e atividades de final de período.</p>
+                    <span class="sumario-data">Data: 27/03/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(74)">
+                    <h3>Aula 74: Atividades de Final de Período</h3>
+                    <p>Participação nas atividades programadas para o encerramento do período escolar.</p>
+                    <span class="sumario-data">Data: 27/03/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(75)">
+                    <h3>Aula 75: Fundamentos de Multimédia Digital</h3>
+                    <p>Conceito de multimédia, interatividade, tipografia e introdução a imagens bitmap e vetoriais.</p>
+                    <span class="sumario-data">Data: 16/04/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(76)">
+                    <h3>Aula 76: Escola Encerrada</h3>
+                    <p>Não se realizaram atividades letivas devido a greve.</p>
+                    <span class="sumario-data">Data: 17/04/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(77)">
+                    <h3>Aula 77: Escola Encerrada</h3>
+                    <p>Não se realizaram atividades letivas devido a greve.</p>
+                    <span class="sumario-data">Data: 17/04/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(78)">
+                    <h3>Aula 78: Software de Edição de Imagem</h3>
+                    <p>Operações de manipulação, edição e integração de imagens em produtos multimédia.</p>
+                    <span class="sumario-data">Data: 23/04/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(79)">
+                    <h3>Aula 79: Exercícios de Edição de Imagem</h3>
+                    <p>Resolução de exercícios práticos focados na manipulação e edição de imagem.</p>
+                    <span class="sumario-data">Data: 24/04/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(80)">
+                    <h3>Aula 80: Criação de GIFs Animados</h3>
+                    <p>Resolução de exercícios práticos direcionados para a criação de GIFs animados.</p>
+                    <span class="sumario-data">Data: 24/04/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(81)">
+                    <h3>Aula 81: Edição e Produção de Áudio Digital</h3>
+                    <p>Introdução ao Audacity, mistura de faixas, aplicação de efeitos e produção de projeto em MP3.</p>
+                    <span class="sumario-data">Data: 30/04/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(82)">
+                    <h3>Aula 82: Prática de Áudio Digital</h3>
+                    <p>Captação e edição de áudio digital focado em diferentes suportes multimédia.</p>
+                    <span class="sumario-data">Data: 07/05/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(83)">
+                    <h3>Aula 83: Prática de Áudio Digital</h3>
+                    <p>Continuação da resolução de exercícios de captação e edição de áudio.</p>
+                    <span class="sumario-data">Data: 08/05/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(84)">
+                    <h3>Aula 84: Autoria de Vídeo e Guiões</h3>
+                    <p>Formatos de ficheiros, introdução às fases de vídeo e planeamento de guiões com narrativa.</p>
+                    <span class="sumario-data">Data: 08/05/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(85)">
+                    <h3>Aula 85: Palestra “4Me – On the Road”</h3>
+                    <p>Interrupção das aulas em sala para a participação na Palestra “4Me – On the Road”.</p>
+                    <span class="sumario-data">Data: 14/05/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(86)">
+                    <h3>Aula 86: Processo de Autoria de Vídeo</h3>
+                    <p>Planeamento de projetos multimédia, guiões narrativos, animação e design de interfaces.</p>
+                    <span class="sumario-data">Data: 15/05/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(87)">
+                    <h3>Aula 87: Planeamento e Protótipos</h3>
+                    <p>Criação de ambientes de animação, protótipos de interfaces e distribuição de tarefas.</p>
+                    <span class="sumario-data">Data: 15/05/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(88)">
+                    <h3>Aula 88: Início do Projeto Final</h3>
+                    <p>Estruturação completa, montagem, testes e arranque oficial do Desenvolvimento do Projeto Final.</p>
+                    <span class="sumario-data">Data: 21/05/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(89)">
+                    <h3>Aula 89: Desenvolvimento do Projeto Final</h3>
+                    <p>Sessão prática dedicada à produção e avanço de conteúdos para o Projeto Final.</p>
+                    <span class="sumario-data">Data: 22/05/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(90)">
+                    <h3>Aula 90: Desenvolvimento do Projeto Final</h3>
+                    <p>Sessão prática dedicada à produção e avanço de conteúdos para o Projeto Final.</p>
+                    <span class="sumario-data">Data: 22/05/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(91)">
+                    <h3>Aula 91: Desenvolvimento do Projeto Final</h3>
+                    <p>Sessão prática dedicada à produção e avanço de conteúdos para o Projeto Final.</p>
+                    <span class="sumario-data">Data: 28/05/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(92)">
+                    <h3>Aula 92: Desenvolvimento do Projeto Final</h3>
+                    <p>Sessão prática dedicada à produção e avanço de conteúdos para o Projeto Final.</p>
+                    <span class="sumario-data">Data: 29/05/2026</span>
+                </div>
+
+                <div class="sumario-card" onclick="showAulaDetalhe(93)">
+                    <h3>Aula 93: Desenvolvimento do Projeto Final</h3>
+                    <p>Sessão prática dedicada à produção e avanço de conteúdos para o Projeto Final.</p>
+                    <span class="sumario-data">Data: 29/05/2026</span>
+                </div>
+
             </div>
         </div>
+
+        <!-- SEÇÃO: BIBLIOGRAFIA -->
         <div id="bibliografia" style="display:none;">
             <h2>Bibliografia</h2>
             <ul class="bibliografia-list">
@@ -444,15 +608,17 @@
                 <li><a href="https://pngtree.com/" target="_blank">PNGTREE</a></li>
             </ul>
         </div>
+
+        <!-- SEÇÃO: DETALHE DA AULA -->
         <div id="aula-detalhe" style="display:none;">
-            <button class="btn" onclick="voltarSumarios()" style="margin-bottom:24px;">← Voltar aos Sumários</button>
+            <button class="btn-voltar" onclick="voltarSumarios()">← Voltar aos Sumários</button>
             <div id="aula-detalhe-conteudo"></div>
         </div>
     </div>
-    <div class="footer-separator"></div>
+
     <footer>
         <div class="footer-content">
-            <span>Guilherme Silva &nbsp;|&nbsp; Email: 60520@esjf.edu.pt &nbsp;|&nbsp; Professor: João Leal</span>
+            <p>Guilherme Silva &nbsp;|&nbsp; Email: 60520@esjf.edu.pt &nbsp;|&nbsp; Professor: João Leal</p>
         </div>
     </footer>
 </body>
